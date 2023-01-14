@@ -6,7 +6,7 @@ class PostList extends Component {
     this.state = { posts: [] }
   }
   componentDidMount() {
-    axios.get("http://jsonplaceholder.typicode.com/posts").then(res => {
+    axios.get("https://justolearnapp.herokuapp.com/api/addproduct").then(res => {
       console.log("response", res)
       this.setState({ posts: res.data })
     }).catch(error => {

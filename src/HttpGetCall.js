@@ -30,6 +30,9 @@ export default class HttpGetCall extends Component {
     axios.get('https://jsonplaceholder.typicode.com/posts').then(response=>{
         console.log("response",response)
         this.setState({ posts: response.data })
+    }).catch(error=>{
+
+        console.log("error",error)
     })
   }
 }

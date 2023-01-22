@@ -9,19 +9,20 @@ export default class HttpCall extends Component {
     const { posts } = this.state
     return (
       <div>
-        {   posts.length ?
+        {/* {   posts.length ?
           this.state.posts.map(post => 
            
             <div>{post.title}</div>
           ):"data loading"
-        }
+        } */}
+        hello
       </div> );
   }
   componentDidMount() {
-    axios.get("http://jsonplaceholder.typicode.com/posts").then(res => {
+    axios.get("http://localhost:3000/api/users").then(res => {
         alert("success")
       console.log("response", res)
-      this.setState({ posts: res.data })
+      // this.setState({ posts: res.data })
     }).catch(error => {
         alert("error")
       console.log("error", error)

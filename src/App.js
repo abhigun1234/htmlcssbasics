@@ -13,7 +13,7 @@ function App() {
     <div className="App">
    
      {/* <CourseList /> */}
-     {/* <HttpCall></HttpCall> */}
+     <HttpCall></HttpCall>
      {/* <PostData></PostData> */}
     {/* <MyNewComponent></MyNewComponent> */}
     <HttpGetCall></HttpGetCall>
